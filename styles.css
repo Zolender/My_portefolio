@@ -1,89 +1,220 @@
+/* ====================
+   Zolender Portfolio – styles.css
+   ==================== */
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f8f9fa;
-}
-
-.hero {
-    background-color: #007bff;
-    text-align: center;
-    padding: 50px 20px;
-    color: white;
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    animation: fadeIn 1s ease-in-out;
-}
-
-.btn-custom {
-    background-color: #007bff;
-    color: white;
-    border: 2px solid white;
-    animation: pulse 2s ease-in-out infinite;
-}
-
-.btn-custom:hover {
-    background-color: #0056b3;
-}
-
-.highlights, .skills, .timeline, .projects-carousel, .testimonials {
-    padding: 40px 20px;
-}
-
-.highlight-card:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
-}
-
-.progress-bar {
-    background-color: #007bff;
-}
-
-.timeline-item {
-    margin-bottom: 20px;
-    border-left: 2px solid #007bff;
-    padding-left: 20px;
-}
-
-.carousel-item img {
-    max-height: 300px;
-    object-fit: cover;
-}
-
-footer {
-    background-color: #343a40;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer a {
-    color: #007bff;
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f0f0f;
+    color: #f5f5f5;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  
+  /* Layout */
+  section {
+    padding: 4rem 1rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #0f0f0f;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #333;
+  }
+  
+  nav .logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    color: #27ae60;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+  }
+  
+  nav a {
+    color: #f5f5f5;
     text-decoration: none;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.05);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #27ae60;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 6rem 2rem;
+  }
+  
+  .hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    color: #ccc;
+    min-height: 2rem;
+  }
+  
+  .hero .cta {
+    margin-top: 2rem;
+    padding: 0.8rem 2rem;
+    background-color: #27ae60;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .hero .cta:hover {
+    background-color: #219150;
+  }
+  
+  /* About */
+  .about {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .about img {
+    width: 200px;
+    height: auto;
+    border-radius: 2rem;
+    object-fit: cover;
+    filter: drop-shadow(0 0 10px #27ae60);
+  }
+  
+  .about .text {
+    flex: 1;
+  }
+  
+  /* Skills */
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .skill {
+    background: #1c1c1c;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 140px;
+    transition: transform 0.3s;
+    box-shadow: 0 0 5px #27ae60;
+  }
+  
+  .skill:hover {
+    transform: scale(1.05);
+  }
+  
+  .skill .emoji {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skill p {
+    font-size: 0.9rem;
+    color: #bbb;
+  }
+  
+  /* Projects */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project-card {
+    background: #1b1b1b;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(39, 174, 96, 0.3);
+    transition: transform 0.3s;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-card h3 {
+    color: #27ae60;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-card a {
+    color: #f5f5f5;
+    text-decoration: underline;
+    font-size: 0.9rem;
+  }
+  
+  .fcc-projects {
+    margin-top: 2rem;
+  }
+  
+  /* Contact */
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #262626;
+    color: #f5f5f5;
+  }
+  
+  .copy-btn {
+    background: #27ae60;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Quotes */
+  .quotes {
+    font-style: italic;
+    text-align: center;
+    padding-top: 2rem;
+    color: #aaa;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.8rem;
+    color: #777;
+    border-top: 1px solid #333;
+    margin-top: 3rem;
+  }
+  

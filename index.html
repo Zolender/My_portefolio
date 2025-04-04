@@ -1,146 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zolender's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">My Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                </ul>
-            </div>
-        </div>
+  <header class="sticky">
+    <nav>
+      <h1>Zolender</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <div class="hero">
-        <h1>Hi, I’m [Your Name]</h1>
-        <p>Building solutions in code, from algorithms to full-stack applications.</p>
-        <div>
-            <a href="#" class="btn btn-custom btn-lg me-3">View Projects</a>
-            <a href="#" class="btn btn-outline-dark btn-lg">Contact Me</a>
-        </div>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Hey, I’m Zolender</h2>
+      <p class="typing">CS Student • Football Fanatic • Future Data Scientist</p>
+      <a href="#projects" class="btn">View My Work</a>
     </div>
+  </section>
 
-    <div class="highlights text-center">
-        <h2 class="mb-4">My Key Strengths</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card highlight-card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Languages</h5>
-                            <p class="card-text">C, C++, JavaScript, PHP</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card highlight-card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Frameworks</h5>
-                            <p class="card-text">React, Bootstrap</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card highlight-card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Specialties</h5>
-                            <p class="card-text">Algorithms, Data Analytics</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <section id="about">
+    <div class="container">
+      <div class="about-img">
+        <!-- Placeholder avatar-style image -->
+        <div class="standing-avatar"></div>
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I’m Eben-Ezer Ndeingar, a driven CS student passionate about tech and football. I aim to use data science to solve real-world problems and make an impact across Africa and beyond.</p>
+      </div>
     </div>
+  </section>
 
-    <div class="skills">
-        <div class="container">
-            <h2>My Skills</h2>
-            <div>
-                <p>C++</p>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 85%">85%</div>
-                </div>
-            </div>
-            <div>
-                <p>JavaScript</p>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 90%">90%</div>
-                </div>
-            </div>
-            <div>
-                <p>React</p>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 75%">75%</div>
-                </div>
-            </div>
-        </div>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Project Title 1</h3>
+        <p>A short description about what this project is and what tech was used.</p>
+        <p><strong>Tech Stack:</strong> HTML, CSS, JS</p>
+        <a href="#">GitHub</a> | <a href="#">Live Demo</a>
+      </div>
+      <div class="project-card">
+        <h3>Project Title 2</h3>
+        <p>A short description about what this project is and what tech was used.</p>
+        <p><strong>Tech Stack:</strong> React, Vite</p>
+        <a href="#">GitHub</a> | <a href="#">Live Demo</a>
+      </div>
+      <div class="project-card">
+        <h3>Project Title 3</h3>
+        <p>A short description about what this project is and what tech was used.</p>
+        <p><strong>Tech Stack:</strong> Python, Flask</p>
+        <a href="#">GitHub</a> | <a href="#">Live Demo</a>
+      </div>
     </div>
-
-    <div class="timeline">
-        <div class="container">
-            <h2>My Journey</h2>
-            <div class="timeline-item">
-                <h5>2020: Started Programming</h5>
-                <p>Began learning C and building small projects.</p>
-            </div>
-            <div class="timeline-item">
-                <h5>2021: Explored Web Development</h5>
-                <p>Learned HTML, CSS, JavaScript, and PHP. Built my first full-stack project.</p>
-            </div>
-            <div class="timeline-item">
-                <h5>2022: Data Analytics</h5>
-                <p>Created dashboards and interactive data visualizations using Python and Tableau.</p>
-            </div>
-        </div>
+    <button id="toggle-fcc">Show FCC Projects</button>
+    <div id="fcc-projects" class="hidden">
+      <ul>
+        <li><a href="#">FCC Survey Form</a></li>
+        <li><a href="#">FCC Tribute Page</a></li>
+        <li><a href="#">FCC Product Landing</a></li>
+        <!-- Add links or platform redirect -->
+      </ul>
     </div>
+  </section>
 
-    <div class="projects-carousel">
-        <div class="container">
-            <h2>Featured Projects</h2>
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="project1.jpg" class="d-block w-100" alt="Project 1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="project2.jpg" class="d-block w-100" alt="Project 2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="project3.jpg" class="d-block w-100" alt="Project 3">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </a>
-            </div>
-        </div>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">🐍 Python – My go-to for brain magic ⭐⭐⭐⭐☆</div>
+      <div class="skill-card">⚛️ React – still learning, but vibes unmatched ⭐⭐☆☆☆</div>
+      <div class="skill-card">⚡ Vite – fast like Kylian Mbappé ⭐⭐☆☆☆</div>
+      <div class="skill-card">🖌️ HTML/CSS – canvas for my creativity ⭐⭐⭐⭐☆</div>
+      <div class="skill-card">🧠 SQL – brainy backend things ⭐⭐⭐☆☆</div>
     </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2024 [Your Name]. All Rights Reserved.</p>
-    </footer>
+  <section id="quotes">
+    <div id="quote-box">
+      <p id="quote-text">“Discipline beats motivation.”</p>
+    </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p>Email: ndeingare@gmail.com <button onclick="copyEmail()">Copy</button></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Zolender | Built with ❤️ and JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
-
