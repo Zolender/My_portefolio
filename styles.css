@@ -1,0 +1,89 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.hero {
+    background-color: #007bff;
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.btn-custom {
+    background-color: #007bff;
+    color: white;
+    border: 2px solid white;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+
+.highlights, .skills, .timeline, .projects-carousel, .testimonials {
+    padding: 40px 20px;
+}
+
+.highlight-card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.progress-bar {
+    background-color: #007bff;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    border-left: 2px solid #007bff;
+    padding-left: 20px;
+}
+
+.carousel-item img {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
