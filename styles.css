@@ -1,0 +1,43 @@
+body{
+  background-color: rgba(0, 0, 0, 0.882);
+  color: white;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: rgba(91, 105, 110, 0.882);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  width: 100%;
+  height: 3rem;
+  z-index: 999;
+}
+
+.nav-list{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  right: 0;
+}
+
+.nav-item{
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+  transition: color 1.5s ease-in-out 0.2s;
+}
+
+
+.nav-item:hover{
+  transform: scale(1.1);
+  color: rgb(113, 137, 137);
+}
