@@ -3,41 +3,47 @@ body{
   color: white;
 }
 
+.brand{
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(145, 236, 236);
+  margin-left: 5%;
+}
+
 .nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  background-color: rgba(91, 105, 110, 0.882);
+  background: linear-gradient(to right, rgba(115, 110, 110, 0.342), rgba(105, 163, 203, 0.825));
   color: white;
   position: fixed;
   top: 0;
   left: 0;
-  
   width: 100%;
-  height: 3rem;
-  z-index: 999;
+  z-index: 1000;
 }
 
 .nav-list{
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  gap: 20px;  
   list-style: none;
-  margin: 0;
-  padding: 0;
-  right: 0;
+  margin-right: 20%;
 }
 
-.nav-item{
-  margin-right: 20px;
-  color: white;
+.nav-item a{
+  color: rgb(14, 14, 15);
   text-decoration: none;
-  transition: color 1.5s ease-in-out 0.2s;
+  font-weight: bold;
+  font-size: 1.25em;
+  transition: color 0.5s ease;
 }
 
+.nav-item a:hover{
+  color: rgba(255, 255, 255, 0.373);
+}
 
-.nav-item:hover{
-  transform: scale(1.1);
-  color: rgb(113, 137, 137);
+.about-section{
+  padding-top: 10%;
+  display: flex;
 }
