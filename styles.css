@@ -179,3 +179,50 @@ header h1:hover{
   transform: translate3d(-4px, -10px, 0);
   box-shadow: 10px 15px 20px rgba(39, 104, 235, 1);
 }
+
+
+
+
+footer{
+  text-align: center;
+  align-items: center;
+  height: fit-content;
+  width: 100%;
+  background-color: #1c1038;
+  color: #c8bfbf;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  padding-top: 10px ;
+}
+
+footer p{
+  font-size: 15px;
+  font-weight: 600;
+  text-shadow: 0 10px 10px rgba(233, 225, 225, 0.5);
+}
+
+footer .links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+footer .links .icon{
+  display: block;
+  height: 50px;
+  width: 50px;
+  margin: 10px 10px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(233, 225, 225, 0.5);
+  transition: all 0.3s ease-in 0.1s;
+}
+
+footer .icon:hover{
+  cursor: pointer;
+  transform: translate(0, -10px);
+  box-shadow: 0 10px 20px rgb(77, 87, 107);
+}
