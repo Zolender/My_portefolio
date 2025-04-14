@@ -181,6 +181,94 @@ header h1:hover{
 }
 
 
+.About .C-button{
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 20px;
+  background-color: #eef8f3;
+  color: #0f0d0d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in 0.1s;
+  margin-top: 70px;
+}
+
+.About .C-button:hover {
+    background-color: #5323c4;
+    box-shadow: 0px 15px 20px rgba(248, 252, 250, 0.4);
+    color: #fff;
+    transform: translateY(-10px);
+  }
+  
+  .About .C-button:active {
+    transform: translateY(10px);
+  }
+
+
+.contact{
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.email-form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9d0;
+  box-shadow: 5px 5px  10px rgba(220, 217, 217, 2);
+  border-radius: 2px 5px 2px 5px;
+}
+
+.email-form h2 {
+  margin-top: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.email-form p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.email-form .form-group {
+  margin-bottom: 20px;
+}
+
+.email-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.email-form input[type="text"], .email-form input[type="email"], .email-form textarea {
+  width: 90%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.email-form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.email-form input[type="submit"]:hover {
+  background-color: #444;
+}
+
+
 
 
 footer{
