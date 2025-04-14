@@ -188,12 +188,12 @@ footer{
   align-items: center;
   height: fit-content;
   width: 100%;
-  background-color: #1c1038;
+  background-color: #07011eb5;
   color: #c8bfbf;
   position: relative;
   bottom: 0;
   right: 0;
-  padding-top: 10px ;
+  padding: 5px ;
 }
 
 footer p{
@@ -202,7 +202,24 @@ footer p{
   text-shadow: 0 10px 10px rgba(233, 225, 225, 0.5);
 }
 
-footer .links{
+footer .visit{
+  font-size: 15px;
+  font-weight: 300;
+  color: #979493;
+}
+
+footer .visit a{
+  text-decoration: none;
+  color: #979493;
+  transition: color 0.2s ease-in 0.1s;
+}
+
+footer .visit a:hover{
+  text-decoration: underline;
+  color: aliceblue;
+}
+
+/* footer .links{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -212,8 +229,8 @@ footer .links{
 
 footer .links .icon{
   display: block;
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
   margin: 10px 10px;
   overflow: hidden;
   border-radius: 50%;
@@ -225,4 +242,4 @@ footer .icon:hover{
   cursor: pointer;
   transform: translate(0, -10px);
   box-shadow: 0 10px 20px rgb(77, 87, 107);
-}
+} */
