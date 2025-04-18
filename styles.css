@@ -207,6 +207,66 @@ header h1:hover{
   }
 
 
+
+.skills{
+  height: 100vh;
+  padding: 20px;
+  
+}
+
+.skills h2{
+  color: #e8f0ef;
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  text-shadow: 0 10px 10px rgba(233, 225, 225, 0.5);
+  width: 100%;
+  text-align: center;
+}
+
+.card-container{
+  display: grid;
+
+}
+
+.card-container img{
+  max-width: 70px;
+  height: auto;
+  margin-top: 5px;
+  overflow: hidden;
+  border-radius: 50%;
+  /* box-shadow: 0 10px 10px rgba(233, 225, 225, 0.5); */
+  transition: all 0.2s ease-in 0.1s;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.card-container img:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.card{
+  
+}
+
+.card:hover{
+  
+}
+
+.card p{
+
+}
+
+
+
+
+
+
 .contact{
   height: 100vh;
   display: flex;
