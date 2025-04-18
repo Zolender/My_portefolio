@@ -213,11 +213,11 @@ header h1:hover{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 .email-form {
-  max-width: 500px;
+  max-width: 400px;
   margin: 40px auto;
   padding: 20px;
   background-color: #f9f9f9d0;
@@ -268,6 +268,24 @@ header h1:hover{
   background-color: #444;
 }
 
+
+
+/* .Media{
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #0f07620f;
+  box-shadow: 5px 5px  10px rgba(220, 217, 217, 2);
+  border-radius: 10px;
+}
+
+.Media h2{
+  color: #f6f6f7f4;
+  text-transform: capitalize;
+  text-shadow: 0 10px 10px rgba(233, 225, 225, 0.5);
+  margin-bottom: 20px;
+  font-weight: 500;
+} */
 
 
 
